@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+   
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Trends</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+
+    <section class="Home_Section">
+        <div class="home-content">
+            <h1>Welcome to Trends</h1>
+            <p>Your one-stop solution for all your needs</p>
+            <button class="btn">Explore Services</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="products" id="productss">
+            <h2>Our Trending Products</h2>
+            <p>We offer a wide range of products that are trending in the market</p>
+        </div>
+    </section>
+    <div class="filtrer-product" id="filter_product">
+       
+     
+        <div class="btnss">
+            <button class="btns" data-category="all">All</button>
+            <button class="btns" data-category="Women">Women</button>
+            <button class="btns" data-category="Men">Men</button>
+            <button class="btns" data-category="kids">Kids</button> 
+        </div>
+    </div>
+
+    <div id="produit"></div>
+   
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="productDetails" class="product-details"></div>
+        </div>
+    </div>
+   
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2>What Our Customers Say</h2>
+            <p class="subtitle">Discover why our customers love shopping with us</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I'm absolutely in love with the quality of the products! Fast shipping and excellent customer service. Will definitely be a returning customer."</p>
+                    <div class="testimonial-author">
+                        <img src="Assets/oumaima_image-removebg-preview (3).png" alt="Customer" class="author-img">
+                        <div class="author-info">
+                            <h4>Oumaima El Khlifi</h4>
+                            <p>Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The selection at Trends is amazing! I found exactly what I was looking for at a great price. The website is also very easy to navigate."</p>
+                    <div class="testimonial-author">
+                        <img src="Assets/oumaima_image-removebg-preview (3).png" alt="Customer" class="author-img">
+                        <div class="author-info">
+                            <h4>Aya ElOuriachi</h4>
+                            <p>New Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The customer support team went above and beyond to help me with my order. I've never experienced such dedication from an online store before!"</p>
+                    <div class="testimonial-author">
+                        <img src="Assets/oumaima_image-removebg-preview (3).png" alt="Customer" class="author-img">
+                        <div class="author-info">
+                            <h4>Jihad Zouidi</h4>
+                            <p>Regular Shopper</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest trends and get exclusive offers directly to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-image">
+                <img src="/api/placeholder/400/300" alt="Newsletter" class="newsletter-img">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>&copy; 2025 Trends. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+  
+    <script src="products.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>E-Commerce Shop</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+            🛒
+            <div class="cart-count" id="cart-count">0</div>
+        </div>
+    </header>
+    <section class="Home_Section">
+        <div class="home-content">
+            <h1>Welcome to Trends</h1>
+            <p>Your one-stop solution for all your needs</p>
+            <button class="btn">Explore Services</button>
+        </div>
+    </section>
+    
+    <main>
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category-filter"style="text-align: center;">Catégorie:</label>
+                <select id="category-filter">
+                    <option value="all">Toutes les catégories</option>
+                    <option value="electronics">Électronique</option>
+                    <option value="clothing">Vêtements</option>
+                    <option value="books">Livres</option>
+                    <option value="homeDecor">Décoration</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="price-filter" style="text-align: center;">Prix max:</label>
+                <input type="range" id="price-filter" min="0" max="1000" value="1000" step="50">
+                <span id="price-display">1000€</span>
+            </div>
+            
+            <div class="filter-group" style="display: none;">
+                <label for="search-filter" style="text-align: center;">Recherche:</label>
+                <input type="text" id="search-filter" placeholder="Chercher un produit...">
+            </div>
+        </div>
+        
+        <div class="products" id="products-container">
+           
+        </div>
+    </main>
+    
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Votre Panier</h2>
+                <span class="close" id="close-modal">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+             
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">0.00</span>€</p>
+                <button class="checkout-btn" id="checkout-btn">Passer la commande</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2>What Our Customers Say</h2>
+            <p class="subtitle">Discover why our customers love shopping with us</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I'm absolutely in love with the quality of the products! Fast shipping and excellent customer service. Will definitely be a returning customer."</p>
+                    <div class="testimonial-author">
+                        <img src="Assets/oumaima_image-removebg-preview (3).png" alt="Customer" class="author-img">
+                        <div class="author-info">
+                            <h4>Oumaima El Khlifi</h4>
+                            <p>Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The selection at Trends is amazing! I found exactly what I was looking for at a great price. The website is also very easy to navigate."</p>
+                    <div class="testimonial-author">
+                        <img src="Assets/7dea4200-5ee2-400d-a7e6-02424c14975e.jpg" alt="Customer" class="author-img">
+                        <div class="author-info">
+                            <h4>Aya ElOuriachi</h4>
+                            <p>New Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The customer support team went above and beyond to help me with my order. I've never experienced such dedication from an online store before!"</p>
+                    <div class="testimonial-author">
+                        <img src="Assets/oumaima_image-removebg-preview (3).png" alt="Customer" class="author-img">
+                        <div class="author-info">
+                            <h4>Jihad Zouidi</h4>
+                            <p>Regular Shopper</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest trends and get exclusive offers directly to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-image">
+                <img src="/api/placeholder/400/300" alt="Newsletter" class="newsletter-img">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>&copy; 2025 Trends. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+   <script src="products.js"></script>
+</body>
+</html>
